@@ -23,9 +23,10 @@
 
 
 ## 👥 Integrantes (Grupo 2)
-- **Ericka Cori**  
-- **Paolo Ramos**  
-- **Gaston Nina**
+- **Ericka Guiserla Cori Avalo**
+- **Paolo Ramos Mendez**
+- **Gaston Nina Sossa**
+
 
 ---
 
