@@ -1,6 +1,11 @@
 <!-- omit in toc -->
 # 🏗️ Proyecto: ETL y Validación de Calidad de Datos – Trámites Municipales de La Paz
 
+> ⚠️ **Nota Académica:**  
+> Este proyecto es de carácter **experimental** y forma parte del **Módulo 7 – Adquisición y Comprensión de Datos** de la **Maestría en Inteligencia Artificial y Data Science para la Transformación de Negocios (MIADAS 2)**,  
+> orientado al aprendizaje práctico de procesos **ETL, calidad de datos y orquestación con Airflow**.
+
+
 <!-- omit in toc -->
 ## Tabala de contenidos
 - [👥 Integrantes (Grupo 2)](#-integrantes-grupo-2)
@@ -52,6 +57,7 @@
 │   └── quality_report.html
 │
 ├── INFORME FINAL.pdf
+├── Presentacion.pdf
 └── README.md
 ```
 
