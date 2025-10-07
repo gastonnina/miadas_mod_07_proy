@@ -20,7 +20,6 @@
 - [📊 Reporte de Calidad](#-reporte-de-calidad)
 - [🧩 Herramientas y Librerías](#-herramientas-y-librerías)
 - [🏗️ Arquitectura Propuesta](#️-arquitectura-propuesta)
-- [📘 Referencias](#-referencias)
 
 
 ## 👥 Integrantes (Grupo 2)
@@ -176,9 +175,3 @@ El diseño sigue la arquitectura típica de un pipeline ETL:
 El flujo será orquestado por **Apache Airflow**, asegurando reproducibilidad, trazabilidad y monitoreo de cada etapa.
 
 ---
-
-## 📘 Referencias
-
-- [Great Expectations Documentation](https://docs.greatexpectations.io/)
-- [Pandas Profiling / YData Profiling](https://ydata-profiling.ydata.ai/docs/master/)
-- [Apache Airflow](https://airflow.apache.org/)
