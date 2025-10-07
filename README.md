@@ -14,6 +14,7 @@
 - [🧭 Diagrama del Flujo ETL](#-diagrama-del-flujo-etl)
 - [📦 Entregables](#-entregables)
 - [🔍 Descripción de los Notebooks](#-descripción-de-los-notebooks)
+  - [🚀 Ejecución de los notebooks](#-ejecución-de-los-notebooks)
 - [⚙️ Pipeline Airflow](#️-pipeline-airflow)
   - [Estructura del flujo:](#estructura-del-flujo)
 - [📊 Reporte de Calidad](#-reporte-de-calidad)
@@ -107,6 +108,15 @@ El siguiente diagrama resume las etapas principales del proceso **ETL (Extract, 
 | `mod_07_Scrapy.ipynb` | Extracción de datos desde HTML y API municipal. |
 | `mod_07_transformacion.ipynb` | Limpieza, normalización y unión de datasets. |
 | `mod_07_QUALITY.ipynb` | Validación de calidad con *pandas-profiling* y *Great Expectations*. |
+
+### 🚀 Ejecución de los notebooks
+
+Los notebooks pueden ejecutarse de forma sencilla en:
+
+- **Google Colab** → subiendo directamente cada archivo `.ipynb`.  
+- **Jupyter Notebook** o **VS Code** (si cuentas con Python 3.12+ instalado).
+
+> 💡 Se recomienda usar **Google Colab** para facilitar la ejecución sin necesidad de instalar dependencias locales.
 
 ---
 
