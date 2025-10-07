@@ -11,6 +11,7 @@
 - [👥 Integrantes (Grupo 2)](#-integrantes-grupo-2)
 - [📁 Estructura del Repositorio](#-estructura-del-repositorio)
 - [🎯 Objetivo del Proyecto](#-objetivo-del-proyecto)
+- [🧭 Diagrama del Flujo ETL](#-diagrama-del-flujo-etl)
 - [📦 Entregables](#-entregables)
 - [🔍 Descripción de los Notebooks](#-descripción-de-los-notebooks)
 - [⚙️ Pipeline Airflow](#️-pipeline-airflow)
@@ -71,7 +72,19 @@ El objetivo es desarrollar un **pipeline ETL completo** para los datos de trámi
 - **Validación de calidad** con herramientas como *Great Expectations*.
 - **Orquestación** mediante *Apache Airflow*.
 
----
+
+## 🧭 Diagrama del Flujo ETL
+
+El siguiente diagrama resume las etapas principales del proceso **ETL (Extract, Transform, Load)** aplicadas sobre los datos municipales:
+
+![Flujo ETL](assets/etl_pipeline.png)
+
+**Descripción general:**
+1. **Extracción:** datos obtenidos desde la API del GeoServer municipal y páginas HTML mediante *BeautifulSoup* y *Scrapy*.  
+2. **Transformación:** limpieza, unión, eliminación de duplicados y tratamiento de nulos.  
+3. **Carga:** exportación de los resultados a archivos CSV para análisis y validación de calidad.  
+4. **Tecnologías:** desarrollo en *Python* con librerías como *NumPy* y *Pandas*.
+
 
 ## 📦 Entregables
 
