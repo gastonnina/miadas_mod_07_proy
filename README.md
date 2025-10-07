@@ -9,6 +9,7 @@
 - [📦 Entregables](#-entregables)
 - [🔍 Descripción de los Notebooks](#-descripción-de-los-notebooks)
 - [⚙️ Pipeline Airflow](#️-pipeline-airflow)
+  - [Estructura del flujo:](#estructura-del-flujo)
 - [📊 Reporte de Calidad](#-reporte-de-calidad)
 - [🧩 Herramientas y Librerías](#-herramientas-y-librerías)
 - [🏗️ Arquitectura Propuesta](#️-arquitectura-propuesta)
@@ -41,7 +42,11 @@
 │   └── mod_07_QUALITY.ipynb
 │
 ├── pipeline_airflow/
-│   └── .keep
+│   └── dags/
+│   ├── tramites_lapaz_extract.py
+│   ├── tramites_lapaz_pipeline.py
+│   ├── tramites_lapaz_report.py
+│   └── tramites_lapaz_transform.py
 │
 ├── reporte_de_calidad/
 │   └── quality_report.html
@@ -87,15 +92,20 @@ El objetivo es desarrollar un **pipeline ETL completo** para los datos de trámi
 
 ## ⚙️ Pipeline Airflow
 
-La carpeta `pipeline_airflow/` contendrá el **DAG principal** encargado de ejecutar el flujo de datos equivalente a los notebooks.  
-El pipeline incluirá las siguientes tareas:
+La carpeta `pipeline_airflow/dags/` contiene los **DAGs** que replican y automatizan el flujo de los notebooks mediante **Apache Airflow**.
 
-1. **Extracción:** obtención de datos desde fuentes locales y API.
-2. **Transformación:** limpieza y normalización.
-3. **Validación de calidad:** expectativas automáticas sobre el dataset final.
-4. **Carga y exportación:** almacenamiento de resultados y reporte.
+### Estructura del flujo:
+1. **Extracción:** obtención de datos desde fuentes HTML y API.
+2. **Transformación:** limpieza, estandarización y unión de datasets.
+3. **Validación de calidad:** expectativas automáticas con *Great Expectations*.
+4. **Reporte:** generación de informes HTML y dataset final.
 
-> **Nota:** actualmente contiene un archivo `.keep` como marcador. El flujo completo se implementará en la próxima iteración migrando el contenido de los notebooks.
+> **💡 Importante:**
+> Para que Airflow ejecute correctamente los flujos, copia la carpeta `pipeline_airflow/dags/` dentro del directorio `dags` de tu instalación de Airflow, por ejemplo:
+> ```
+> ~/airflow/dags/
+> ```
+
 
 ---
 
