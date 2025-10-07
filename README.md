@@ -77,12 +77,13 @@ El objetivo es desarrollar un **pipeline ETL completo** para los datos de trámi
 
 | Entregable | Descripción |
 |-------------|--------------|
-| **Código fuente** | Repositorio estructurado con notebooks y scripts base para migración a Airflow. |
-| **Dataset limpio generado** | Archivo `df_modelo_limpio_1.csv` con los registros depurados y transformados. |
-| **Diccionario de datos** | Descripción de las variables, tipos y significados (`diccionario/Diccionario de Datos.xlsx`). |
-| **Data Quality Report** | Reporte automático de calidad (`reporte_de_calidad/quality_report.html`). |
-| **Pipeline orquestado** | Flujo ETL en desarrollo bajo la carpeta `pipeline_airflow/`, donde se migrarán los procesos de los notebooks. |
-| **Arquitectura propuesta** | Diagrama explicativo incluido en el informe (`INFORME FINAL.pdf`). |
+| **Código fuente** | Repositorio estructurado con [notebooks](notebooks/) y [scripts base para migración a Airflow](pipeline_airflow/dags/). |
+| **Dataset limpio generado** | Archivo [`df_modelo_limpio_1.csv`](data/df_modelo_limpio_1.csv) con los registros depurados y transformados. |
+| **Diccionario de datos** | Descripción de las variables, tipos y significados en [`Diccionario de Datos.xlsx`](diccionario/Diccionario%20de%20Datos.xlsx). |
+| **Data Quality Report** | Reporte automático de calidad generado con *Great Expectations* y *pandas-profiling*: [`quality_report.html`](reporte_de_calidad/quality_report.html). |
+| **Pipeline orquestado** | Flujo ETL implementado en [`pipeline_airflow/dags/`](pipeline_airflow/dags/). |
+| **Arquitectura propuesta** | Documento principal del proyecto: [`INFORME FINAL.pdf`](INFORME%20FINAL.pdf). |
+
 
 ---
 
